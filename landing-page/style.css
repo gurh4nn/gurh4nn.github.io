@@ -469,7 +469,7 @@ h2 {
         padding-bottom: 1.5em;
     }
     .content {
-        font-size: 1em;
+        font-size: 1.4em;
     }
     .header h5 {
         padding-left: 5em;
@@ -479,7 +479,8 @@ h2 {
         top: 0.5em;
     }
     .content-box h5 {
-        padding-left: 12em;
+        padding-left: 9em;
+        font-size: 0.8em;
         margin: 0;
     }
     .content-box-text {
@@ -496,7 +497,7 @@ h2 {
     }
     p {
         line-height: 1.4em;
-        font-size: 1em;
+        font-size: 1.4em;
     }
     .content-box a {
         font-size: 0.7em;
