@@ -3,6 +3,7 @@ body {
     padding: 0;
     box-sizing: border-box;
     color: white;
+    font-family: 'Gilroy', sans-serif;
 }
 
 h5,
@@ -13,19 +14,17 @@ hr,
 
 .logo {
     font-weight: lighter;
+    font-family: 'Chronicle Display', sans-serif;
 }
 
 html {
+    font-family: 'Gilroy', sans-serif;
     font-size: 10px;
     scroll-behavior: smooth;
 }
 
 .font-chronicle {
     font-family: 'Chronicle Display', sans-serif;
-}
-
-.font-gilroy {
-    font-family: 'Gilroy', sans-serif;
 }
 
 .header {
@@ -48,6 +47,7 @@ h5 {
 .content {
     background-color: #0B1D26;
     position: relative;
+    padding-bottom: 6em;
 }
 
 .content-box,
@@ -89,6 +89,9 @@ h5 {
 
 h1 {
     text-transform: capitalize;
+    font-family: Chronicle Display;
+    letter-spacing: 3px;
+    font-weight: 100;
 }
 
 .content:before {
@@ -103,7 +106,72 @@ h1 {
     ;
 }
 
-@media (min-width: 1160px) {
+.active {
+    font-weight: bold;
+    color: aliceblue;
+    font-size: 1.5em;
+    padding-top: 1.1em !important;
+    padding-bottom: 1.1em !important;
+    border-right: 3px solid white;
+    padding-right: 31px;
+}
+
+.content-box {
+    display: flex;
+    justify-content: space-around;
+}
+
+.content-id {
+    display: inline-block;
+}
+
+.header-scroll span {
+    position: absolute;
+    top: 15px;
+    left: 5em;
+    border-right: 1px solid white;
+    height: 100%;
+    padding-right: 22px;
+}
+
+h2 {
+    font-family: 'Chronicle Display', sans-serif;
+}
+
+.start.scrolling {
+    padding-right: 5px;
+}
+
+.header-scroll {
+    display: flex;
+    position: fixed;
+    right: 8em;
+    top: 10.5em;
+    font-size: 1.5em;
+    z-index: 1;
+}
+
+.header-scroll ul {
+    position: absolute;
+    flex-direction: column;
+    text-align: left;
+    list-style: none;
+}
+
+.header-scroll li {
+    padding-top: 2.7em;
+}
+
+.content-id.second {
+    left: -15%;
+    top: 0%;
+}
+
+.content-id.first {
+    left: 0%;
+}
+
+@media (min-width: 1159px) {
     .menu {
         text-align: center;
         font-size: 1.5em;
@@ -130,10 +198,10 @@ h1 {
         margin-left: auto;
         margin-right: auto;
     }
-    .content-img {
+    /* .content-img {
         margin-left: auto;
         margin-right: auto;
-    }
+    } */
     .content {
         font-size: 2rem;
     }
@@ -165,13 +233,12 @@ h1 {
         padding-right: 5%;
     }
     .content-box {
-        display: flex;
         flex-direction: row;
         padding-top: 3em;
     }
-    .content-img.order {
+    /* .content-img.order {
         order: 1;
-    }
+    } */
     .logo {
         font-size: 2em;
         padding-bottom: 5em;
@@ -191,24 +258,25 @@ h1 {
         position: relative;
         left: -27px;
     }
-    .header-scroll {
+    /* .header-scroll {
         display: flex;
-        position: absolute;
+        position: fixed;
         right: 8em;
         top: 10.5em;
         font-size: 1.5em;
+        z-index: 1;
     }
     .header-scroll ul {
         position: absolute;
         flex-direction: column;
-        text-align: center;
+        text-align: left;
         list-style: none;
     }
     .header-scroll li {
         padding-top: 2.7em;
-    }
+    } */
     .content hr {
-        top: 5.2em;
+        top: 5.1em;
     }
     .content-id {
         position: absolute;
@@ -219,14 +287,6 @@ h1 {
     }
     .content-box-text {
         position: relative;
-    }
-    .content-id.second {
-        left: -20%;
-        top: 0%;
-    }
-    .content-id.first {
-        left: -8%;
-        top: 10%;
     }
     h2 {
         font-weight: 300;
@@ -268,12 +328,12 @@ h1 {
         margin-left: auto;
         margin-right: auto;
     }
-    .content-img {
+    /* .content-img {
         margin-left: auto;
         margin-right: auto;
-    }
+    } */
     .content {
-        font-size: 1.5rem;
+        font-size: 1.4em;
     }
     .header h5 {
         padding-left: 5em;
@@ -329,12 +389,13 @@ h1 {
         position: relative;
         left: -27px;
     }
-    .header-scroll {
+    /* .header-scroll {
         display: flex;
-        position: absolute;
-        right: 8em;
+        position: fixed;
+        right: 6em;
         top: 10.5em;
         font-size: 1.5em;
+        z-index: 1;
     }
     .header-scroll ul {
         position: absolute;
@@ -344,7 +405,7 @@ h1 {
     }
     .header-scroll li {
         padding-top: 2.7em;
-    }
+    } */
     .content hr {
         top: 4.6em;
     }
@@ -357,14 +418,6 @@ h1 {
     }
     .content-box-text {
         position: relative;
-    }
-    .content-id.second {
-        left: -20%;
-        top: 0%;
-    }
-    .content-id.first {
-        left: -8%;
-        top: 10%;
     }
     h2 {
         font-weight: 300;
@@ -411,12 +464,12 @@ h1 {
     .content-img {
         margin-left: auto;
         margin-right: auto;
-        width: 50%;
+        width: 70%;
         padding-top: 3em;
         padding-bottom: 1.5em;
     }
     .content {
-        font-size: 2rem;
+        font-size: 1em;
     }
     .header h5 {
         padding-left: 5em;
@@ -426,7 +479,7 @@ h1 {
         top: 0.5em;
     }
     .content-box h5 {
-        padding-left: 5.8em;
+        padding-left: 12em;
         margin: 0;
     }
     .content-box-text {
@@ -447,5 +500,12 @@ h1 {
     }
     .content-box a {
         font-size: 0.7em;
+    }
+    .content-box {
+        display: flex;
+        flex-wrap: wrap;
+    }
+    .content-img.order {
+        order: -1;
     }
 }
