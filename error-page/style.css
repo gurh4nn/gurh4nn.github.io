@@ -167,7 +167,7 @@
  
  @media screen and (max-width: 420px) {
      .error-page {
-         overflow: hidden;
+         overflow-y: hidden !important;
      }
      .warn {
          width: 90%;
