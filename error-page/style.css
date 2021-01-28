@@ -5,10 +5,6 @@
      font-family: Roboto;
  }
  
- .error-page {
-     height: 100vh;
- }
- 
  .warn {
      text-align: center;
      margin-top: 10%;
